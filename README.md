@@ -1,44 +1,51 @@
 # Morocco Tourism Web
 
-Proyecto base en React + Vite para una web de turismo desde España a Marruecos.
+Landing page en React + Vite para una agencia de viajes entre España y Marruecos.
+
+## Mejoras aplicadas (UX + visual)
+
+- Diseño visual más premium: nueva jerarquía, métricas de confianza, bloques de proceso y FAQ.
+- Formulario funcional con **validación real de campos** y mensajes de error visibles.
+- Mejoras de accesibilidad: `skip link`, `aria-label`, `aria-invalid`, labels reales y carga diferida de imágenes.
+- Estructura más escalable para evolucionar a producción (secciones desacopladas y datos fácilmente editables).
+
+## Errores corregidos
+
+- **Formulario sin funcionalidad:** antes no tenía estado ni validaciones.
+- **Sin feedback de error al usuario:** ahora muestra mensajes de error por campo.
+- **Sin feedback de éxito:** ahora confirma envío correctamente.
+- **Campos sin etiquetas semánticas:** se agregaron labels para mejorar UX y accesibilidad.
 
 ## Cómo usarlo
 
-1. Abre la carpeta en VS Code.
-2. Instala dependencias:
+1. Instala dependencias:
 
 ```bash
 npm install
 ```
 
-3. Inicia el entorno de desarrollo:
+2. Inicia entorno de desarrollo:
 
 ```bash
 npm run dev
 ```
 
-4. Para compilar producción:
+3. Compila producción:
 
 ```bash
 npm run build
 ```
 
-## Estructura
+4. Previsualiza build:
 
-- `index.html`
-- `src/main.jsx`
-- `src/App.jsx`
-- `src/styles.css`
+```bash
+npm run preview
+```
 
-## Qué puedes editar fácilmente
+## Próximos pasos recomendados para producción
 
-- textos
-- imágenes
-- colores
-- secciones
-- formulario
-- enlaces de navegación
-
-## Nota
-
-Las imágenes actuales se cargan desde URLs públicas para que el proyecto sea ligero y fácil de arrancar.
+1. Conectar formulario a backend (Formspree/EmailJS/API propia).
+2. Añadir CMS o archivos JSON para gestionar circuitos y testimonios.
+3. Integrar analítica (GA4 / PostHog) y eventos de conversión.
+4. Implementar SEO técnico (meta tags, OpenGraph, schema.org TravelAgency).
+5. Crear páginas internas por circuito con rutas en React Router.
